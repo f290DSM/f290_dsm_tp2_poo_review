@@ -7,7 +7,7 @@ e comportamentos
 public class Pikachu {
     // Atributos
     public String nick;
-    public int cp;
+    private int cp;
     public int hp;
 
     // Comportamentos
@@ -17,6 +17,13 @@ public class Pikachu {
         this.hp = hp;
     }
 
+    public void setCp(int novoCp) {
+        if (novoCp <= 0) {
+            System.out.println("CP não pode ser menor ou igual a 0");
+        } else {
+            cp = novoCp;
+        }
+    }
 
     public void iChooseYou() {
         System.out.println("Pikachu eu escolho voce!");
