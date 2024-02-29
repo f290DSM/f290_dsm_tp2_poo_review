@@ -1,9 +1,9 @@
-import domain.Pikachu;
+import domain.Pokemon;
 
 public class Jogo {
     public static void iniciar() {
-        Pikachu p = new Pikachu("Pikachu",1550, 120);
+        // Pokemon p = new Pokemon("Pikachu",1550, 120);
 
-        p.setCp(-600);
+        // p.setCp(-600);
     }
 }

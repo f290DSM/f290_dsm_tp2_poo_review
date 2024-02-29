@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import domain.Pikachu;
+import domain.Pokemon;
 
 public class App {
     public static void main(String[] args) throws Exception {
