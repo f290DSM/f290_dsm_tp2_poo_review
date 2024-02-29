@@ -14,5 +14,5 @@ poo --> her
 poo --> pol
 
 abs --Modelagem -->dom(Dominio)
-enc --Limita--> e1("Acesso\nEncapsula comportamentos")
+enc --Limita--> e1("Acesso")
 ```

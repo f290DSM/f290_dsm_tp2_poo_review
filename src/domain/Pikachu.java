@@ -6,9 +6,9 @@ e comportamentos
 */
 public class Pikachu {
     // Atributos
-    public String nick;
+    private String nick;
     private int cp;
-    public int hp;
+    private int hp;
 
     // Comportamentos
     public Pikachu(String nick, int cp, int hp) {
@@ -25,6 +25,26 @@ public class Pikachu {
         }
     }
 
+    public int getCp() {
+        return this.cp;
+    }
+
+    public void setNick(String nick) {
+        this.nick = nick;
+    }
+
+    public String getNick() {
+        return this.nick;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
     public void iChooseYou() {
         System.out.println("Pikachu eu escolho voce!");
     }
@@ -38,6 +58,5 @@ public class Pikachu {
     public String toString() {
         return "Pikachu [nick=" + nick + ", cp=" + cp + ", hp=" + hp + "]";
     }
-
     
 }
