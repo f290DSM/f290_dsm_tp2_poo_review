@@ -15,4 +15,27 @@ poo --> pol
 
 abs --Modelagem -->dom(Dominio)
 enc --Limita--> e1("Acesso")
+her --Compartilha--> h1("Atributos\ne Comportamentos")
+```
+
+## Herança
+
+```mermaid
+classDiagram
+class Pokemon {
+    -nick
+    -cp
+    -hp
+    +iChooseYou()
+    +comeBack()
+    +attack()
+ }
+class Squirtle { }
+class Charmander { }
+class Pikachu { }
+
+Pokemon <|-- Squirtle
+Pokemon <|-- Charmander
+Pokemon <|-- Pikachu
+
 ```

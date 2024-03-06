@@ -45,9 +45,7 @@ public abstract class Pokemon {
         this.hp = hp;
     }
 
-    public void iChooseYou() {
-        System.out.println("Pikachu eu escolho voce!");
-    }
+    public abstract void iChooseYou();
 
     public void comeBack() {
         System.out.println("Come back...");
