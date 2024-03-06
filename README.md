@@ -34,8 +34,27 @@ class Squirtle { }
 class Charmander { }
 class Pikachu { }
 
-Pokemon <|-- Squirtle
+class FireType { 
+    <<interface>>
+    +amber()
+}
+
+class EletricType { 
+    <<interface>>
+    +thunderbolt()
+}
+
+class WaterType { 
+    <<interface>>
+    +splash()
+}
+
+Pokemon <|-- Squirtle 
 Pokemon <|-- Charmander
 Pokemon <|-- Pikachu
+
+Squirtle ..|> WaterType
+Charmander ..|> FireType
+Pikachu ..|> EletricType
 
 ```

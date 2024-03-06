@@ -54,6 +54,8 @@ public abstract class Pokemon {
         System.out.println("Come back...");
     }
 
+    public abstract void attack();
+
     @Override
     public String toString() {
         return  this.getClass().getSimpleName()
