@@ -45,16 +45,19 @@ public abstract class Pokemon {
         this.hp = hp;
     }
 
-    public abstract void iChooseYou();
+    public void iChooseYou() {
+        System.out.printf("%s eu escolho voce!\n",
+                this.getClass().getSimpleName());
+    }
 
     public void comeBack() {
         System.out.println("Come back...");
     }
 
-
     @Override
     public String toString() {
-        return "Pikachu [nick=" + nick + ", cp=" + cp + ", hp=" + hp + "]";
+        return  this.getClass().getSimpleName()
+         + " [nick=" + nick + ", cp=" + cp + ", hp=" + hp + "]";
     }
-    
+
 }
